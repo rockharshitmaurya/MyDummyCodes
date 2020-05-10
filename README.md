@@ -1,4 +1,22 @@
 # TicTacToe
-I'm Creating This Rep0sit0ry F0r Testing Dummy Codes . 
-Need java version "1.8.0_77" to Run This File You Can Use without java version "1.8.0_77" in some System.
+This game Needs java version "1.8.0_77" to Run This File You Can Use without java version "1.8.0_77" in some Systems.
+
+
+if You have any problem to use it --->
+
+contact me at ...
+
+https://www.instagram.com/rockharshitmaurya/
+
+https://www.instagram.com/rockharshitmaury/
+
+https://www.facebook.com/RockHarshitMaury/
+
+https://www.facebook.com/RockHarshitMaurya/
+
+https://twitter.com/HarshitMaurya_
+
+https://harshitmaurya.blogspot.com/
+
+https://www.youtube.com/harshitmaurya
 
