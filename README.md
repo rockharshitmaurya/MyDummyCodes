@@ -4,7 +4,7 @@ This game Needs java version "1.8.0_77" to Run This File You Can Use without jav
 
 if You have any problem to use it --->
 
-contact me at ...
+Ping Me At ... 
 
 https://www.instagram.com/rockharshitmaurya/
 
