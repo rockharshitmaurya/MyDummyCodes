@@ -1,0 +1,448 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package TicTacToe;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author HarshitMaurya
+ */
+public class TicTacToe extends javax.swing.JFrame {
+public int i=10;
+    /**
+     * Creates new form TicTacToe
+     */
+    public TicTacToe() {
+        super("Tic Tac Toe");
+        initComponents();
+       
+    }
+    public void WinResult()
+    {
+        if(i>=1)
+    {
+       if(A1.getText().equalsIgnoreCase("0") && A2.getText().equalsIgnoreCase("0") && A3.getText().equalsIgnoreCase("0") ||
+               B1.getText().equalsIgnoreCase("0") && B2.getText().equalsIgnoreCase("0") && B3.getText().equalsIgnoreCase("0") ||
+               C1.getText().equalsIgnoreCase("0") && C2.getText().equalsIgnoreCase("0") && C3.getText().equalsIgnoreCase("0") ||
+               A1.getText().equalsIgnoreCase("0") && B1.getText().equalsIgnoreCase("0") && C1.getText().equalsIgnoreCase("0") || 
+               A2.getText().equalsIgnoreCase("0") && B2.getText().equalsIgnoreCase("0") && C2.getText().equalsIgnoreCase("0") ||
+               A3.getText().equalsIgnoreCase("0") && B3.getText().equalsIgnoreCase("0") && C3.getText().equalsIgnoreCase("0") ||
+                   A1.getText().equalsIgnoreCase("0") && B2.getText().equalsIgnoreCase("0") && C3.getText().equalsIgnoreCase("0") ||
+                   A3.getText().equalsIgnoreCase("0") && B2.getText().equalsIgnoreCase("0") && C1.getText().equalsIgnoreCase("0"))
+       {
+           JOptionPane.showMessageDialog(this,"Team 0 Win");
+                int j= JOptionPane.showConfirmDialog(this,"DO You Want To Play Again ?","Confirm",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+     if(j == JOptionPane.YES_OPTION)
+     {
+       
+           A1.setText("");
+           A2.setText("");
+           A3.setText("");
+           B1.setText("");
+                   B2.setText("");
+                   B3.setText("");
+                   C1.setText("");
+                   C2.setText("");
+                   C3.setText("");
+                   i=10;
+     }
+     else
+     {
+           System.exit(0);
+     }
+       }
+       else
+       {
+            if(A1.getText().equalsIgnoreCase("x") && A2.getText().equalsIgnoreCase("x") && A3.getText().equalsIgnoreCase("x") ||
+               B1.getText().equalsIgnoreCase("x") && B2.getText().equalsIgnoreCase("x") && B3.getText().equalsIgnoreCase("x") ||
+               C1.getText().equalsIgnoreCase("x") && C2.getText().equalsIgnoreCase("x") && C3.getText().equalsIgnoreCase("x") ||
+               A1.getText().equalsIgnoreCase("x") && B1.getText().equalsIgnoreCase("x") && C1.getText().equalsIgnoreCase("x") || 
+               A2.getText().equalsIgnoreCase("x") && B2.getText().equalsIgnoreCase("x") && C2.getText().equalsIgnoreCase("x") ||
+               A3.getText().equalsIgnoreCase("x") && B3.getText().equalsIgnoreCase("x") && C3.getText().equalsIgnoreCase("x") ||
+                   A1.getText().equalsIgnoreCase("x") && B2.getText().equalsIgnoreCase("x") && C3.getText().equalsIgnoreCase("x") ||
+                   A3.getText().equalsIgnoreCase("x") && B2.getText().equalsIgnoreCase("x") && C1.getText().equalsIgnoreCase("x"))
+            {
+           JOptionPane.showMessageDialog(this, "Team X wins");
+            int j= JOptionPane.showConfirmDialog(this,"DO You Want To Play Again ?","Confirm",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+     if(j == JOptionPane.YES_OPTION)
+     {
+        A1.setText("");
+           A2.setText("");
+           A3.setText("");
+           B1.setText("");
+                   B2.setText("");
+                   B3.setText("");
+                   C1.setText("");
+                   C2.setText("");
+                   C3.setText("");
+                   i=10;
+     }
+     else
+     {
+         System.exit(0);
+     }
+                }
+            if(i==1)
+            {
+             JOptionPane.showMessageDialog(this, " Ou o Match Draw !");
+           int j= JOptionPane.showConfirmDialog(this,"DO You Want To Play Again ?","Confirm",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+     if(j == JOptionPane.YES_OPTION)
+     {
+        A1.setText("");
+           A2.setText("");
+           A3.setText("");
+           B1.setText("");
+                   B2.setText("");
+                   B3.setText("");
+                   C1.setText("");
+                   C2.setText("");
+                   C3.setText("");
+                   i=10;
+     }
+     else
+     {
+         System.err.println("TEsted");
+         System.exit(0);
+     }
+            }
+       }
+      
+    }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        C2 = new javax.swing.JLabel();
+        C1 = new javax.swing.JLabel();
+        B3 = new javax.swing.JLabel();
+        B2 = new javax.swing.JLabel();
+        B1 = new javax.swing.JLabel();
+        A3 = new javax.swing.JLabel();
+        A2 = new javax.swing.JLabel();
+        A1 = new javax.swing.JLabel();
+        C3 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 468, 20));
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 60, 370));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 468, -1));
+
+        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 60, 370));
+
+        C2.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        C2.setForeground(new java.awt.Color(255, 255, 255));
+        C2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        C2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, 140, 130));
+
+        C1.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        C1.setForeground(new java.awt.Color(255, 255, 255));
+        C1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        C1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 140, 140));
+
+        B3.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        B3.setForeground(new java.awt.Color(255, 255, 255));
+        B3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        B3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 140, 130));
+
+        B2.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        B2.setForeground(new java.awt.Color(255, 255, 255));
+        B2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        B2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 140, 130));
+
+        B1.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        B1.setForeground(new java.awt.Color(255, 255, 255));
+        B1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        B1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 140, 130));
+
+        A3.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        A3.setForeground(new java.awt.Color(255, 255, 255));
+        A3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        A3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 140, 130));
+
+        A2.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        A2.setForeground(new java.awt.Color(255, 255, 255));
+        A2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        A2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, -10, 140, 190));
+
+        A1.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        A1.setForeground(new java.awt.Color(255, 255, 255));
+        A1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        A1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 140, 130));
+
+        C3.setFont(new java.awt.Font("Tekton Pro Ext", 1, 150)); // NOI18N
+        C3.setForeground(new java.awt.Color(255, 255, 255));
+        C3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        C3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(C3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 140, 130));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 450));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void C2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C2MouseClicked
+  if(C2.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        C2.setText("0");
+   }
+   else
+   {
+    C2.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_C2MouseClicked
+
+    private void C1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C1MouseClicked
+      if(C1.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        C1.setText("0");
+   }
+   else
+   {
+    C1.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_C1MouseClicked
+
+    private void B3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B3MouseClicked
+     if(B3.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        B3.setText("0");
+   }
+   else
+   {
+    B3.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_B3MouseClicked
+
+    private void B2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B2MouseClicked
+   if(B2.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        B2.setText("0");
+   }
+   else
+   {
+    B2.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_B2MouseClicked
+
+    private void B1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B1MouseClicked
+     if(B1.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        B1.setText("0");
+   }
+   else
+   {
+    B1.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_B1MouseClicked
+
+    private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
+      if(A3.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        A3.setText("0");
+   }
+   else
+   {
+    A3.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_A3MouseClicked
+
+    private void A2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A2MouseClicked
+     if(A2.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        A2.setText("0");
+   }
+   else
+   {
+    A2.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_A2MouseClicked
+
+    private void A1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A1MouseClicked
+     if(A1.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        A1.setText("0");
+   }
+   else
+   {
+    A1.setText("x");
+   }
+   i--;
+   this.WinResult();
+  }
+    }//GEN-LAST:event_A1MouseClicked
+
+    private void C3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C3MouseClicked
+   if(C3.getText().equals(""))
+  {
+        if(i%2==0)
+   {
+        C3.setText("0");
+   }
+   else
+   {
+    C3.setText("x");
+
+   }
+     i--;
+ this.WinResult();
+  }
+    }//GEN-LAST:event_C3MouseClicked
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+       
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(TicTacToe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(TicTacToe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(TicTacToe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(TicTacToe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new TicTacToe().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel A1;
+    private javax.swing.JLabel A2;
+    private javax.swing.JLabel A3;
+    private javax.swing.JLabel B1;
+    private javax.swing.JLabel B2;
+    private javax.swing.JLabel B3;
+    private javax.swing.JLabel C1;
+    private javax.swing.JLabel C2;
+    private javax.swing.JLabel C3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    // End of variables declaration//GEN-END:variables
+}
